@@ -1,0 +1,22 @@
+.image {
+  height: 200px;
+}
+
+@media (min-width: 500px) {
+  .image {
+    width: 200px;
+    float: left;
+  }
+}
+
+@media (min-width: 600px) {
+  .top .image {
+    width: 200px;
+    float: left;
+  }
+
+  .image {
+    width: 280px;
+    float: none;
+  }
+}

@@ -1,0 +1,10 @@
+.image {
+  height: 200px;
+}
+
+.item:media(min-width: 460px) {
+  .image {
+    width: 200px;
+    float: left;
+  }
+}

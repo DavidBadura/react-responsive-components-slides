@@ -1,0 +1,146 @@
+.react-resizable {
+  position: relative;
+  background: #fff;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg08IS0tIEdlbmVyYXRvcjogQWRvYmUgRmlyZXdvcmtzIENTNiwgRXhwb3J0IFNWRyBFeHRlbnNpb24gYnkgQWFyb24gQmVhbGwgKGh0dHA6Ly9maXJld29ya3MuYWJlYWxsLmNvbSkgLiBWZXJzaW9uOiAwLjYuMSAgLS0+DTwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DTxzdmcgaWQ9IlVudGl0bGVkLVBhZ2UlMjAxIiB2aWV3Qm94PSIwIDAgNiA2IiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmZmZmMDAiIHZlcnNpb249IjEuMSINCXhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiDQl4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjZweCIgaGVpZ2h0PSI2cHgiDT4NCTxnIG9wYWNpdHk9IjAuMzAyIj4NCQk8cGF0aCBkPSJNIDYgNiBMIDAgNiBMIDAgNC4yIEwgNCA0LjIgTCA0LjIgNC4yIEwgNC4yIDAgTCA2IDAgTCA2IDYgTCA2IDYgWiIgZmlsbD0iIzAwMDAwMCIvPg0JPC9nPg08L3N2Zz4=');
+  background-position: bottom right;
+  padding: 0 3px 3px 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  box-sizing: border-box;
+  cursor: se-resize;
+}
+
+.demo__container--desktop {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  margin-top: 10px;
+  overflow: hidden;
+  height: 600px;
+  display: none;
+  color: #fff;
+}
+
+.demo__container--desktop ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.demo__container--desktop ol > li {
+  margin: 0;
+  padding: 0;
+}
+
+.demo__container--desktop .demo__logo {
+  background-color: #C1C1C1;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px
+}
+
+.demo__container--desktop .demo__intro {
+  margin: 20px 20px 0;
+  width: 100%
+}
+
+.demo__container--desktop .demo__line {
+  height: 12px;
+  background-color: #C1C1C1
+}
+
+.demo__container--desktop .demo__line + .demo__line {
+  margin-top: 12px
+}
+
+.demo__container--desktop .demo__line-1 {
+  width: 70%
+}
+
+.demo__container--desktop .demo__line-2 {
+  width: 80%
+}
+
+.demo__container--desktop .demo__line-3 {
+  width: 30%
+}
+
+.demo__container--desktop .demo__list {
+  margin-top: 20px
+}
+
+.demo__container--desktop .demo__item {
+  background-color: #C1C1C1;
+  margin-bottom: 20px
+}
+
+.demo__container--desktop .demo__item-pic {
+  height: 200px;
+  padding: 20px;
+  background-color: #FF9500;
+  font-size: 32px
+}
+
+.demo__container--desktop .demo__item-content {
+  height: 200px
+}
+
+.demo__container--desktop.middle .demo__logo {
+  margin: 0
+}
+
+.demo__container--desktop.middle .demo__intro {
+  margin: 0;
+  padding-left: 120px;
+  position: absolute;
+  right: 20px;
+  top: 20px
+}
+
+.demo__container--desktop.middle .demo__item-pic {
+  width: 200px;
+  float: left
+}
+
+.demo__container--desktop.wide .demo__list {
+  margin-right: -60px
+}
+
+.demo__container--desktop.wide .demo__item {
+  float: left;
+  margin-right: 20px
+}
+
+.demo__container--desktop.wide .demo__item-pic {
+  width: 280px;
+  float: none
+}
+
+.demo__container--desktop.wide .demo__item--feature {
+  width: auto;
+  float: none;
+  margin-right: 60px
+}
+
+.demo__container--desktop.wide .demo__item--feature .demo__item-pic {
+  float: left;
+  width: 200px
+}
+
+@media (min-width: 900px) {
+  .demo__container--mobile {
+    display: none
+  }
+
+  .demo__container--desktop {
+    display: block
+  }
+}
